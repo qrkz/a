@@ -1,0 +1,117 @@
+body{
+    margin: 0; padding: 0;
+    background: #282e35;
+    overflow: hidden;
+}
+#vjHead, #vjFoot{
+    background: #282e35;
+    color: #35d6ec;
+    height: 40px;
+    display: flex; flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    z-index: 100;
+}
+#vjHead a, #vjFoot a{
+    display: flex;
+    width: 50px;height: 40px;
+    align-items: center; justify-content: center;
+    text-decoration: none; color: #35d6ec;
+}
+#vjHead a:nth-child(3), #vjFoot a:nth-child(3){
+    width: calc(100vw - 200px);
+}
+#vjHead{
+    position: fixed;
+    top:0;
+    box-shadow: inset #35d6ec 0 -2px;
+}
+#vjFoot{
+    position: fixed;
+    bottom: 0;
+    box-shadow: inset #35d6ec 0 2px;
+}
+#vjHead a:hover, #vjHead a:focus{
+    background: #181e25;
+    box-shadow: inset #35d6ec 0 -2px;
+}
+#vjFoot a:hover, #vjFoot a:focus{
+    background: #181e25;
+    box-shadow: inset #35d6ec 0 2px;
+}
+.vjPageContainer{
+    margin-bottom: 40px;
+    color: #dddddd;
+}
+
+
+.gallery-thumbs{
+    box-shadow: #35d6ec 0 2px;
+    position: fixed;
+    top:0;
+    width: 100%;
+    z-index: 55;
+    background: #282e35;
+}
+.gallery-thumbs .swiper-slide{
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+}
+.gallery-thumbs .swiper-slide-thumb-active{
+    background: #35d6ec;
+    color: #282e35;
+    letter-spacing: 0.1rem;
+    font-weight: 700;
+}
+.gallery-top{
+    margin-top: 40px;
+    z-index: 5;
+}
+.gallery-top .swiper-wrapper{
+    background: #282e35;
+    box-shadow: inset red 2px 2px, inset red -2px -2px;
+}
+.gallery-top .swiper-wrapper .swiper-slide{
+    background: transparent;
+    height: calc(100vh - 80px);
+    overflow-x: hidden;
+    overflow-y: scroll;
+    box-shadow: inset red 2px 2px, inset red -2px -2px;
+}
+.vjPostHeading{
+    background: #35d6ec;
+    color: #282e35;
+    padding-bottom: 60px;
+    padding-left: 4vw;
+    z-index: -1;
+}
+.vjPostHeadingLarge{
+    font-size: 30vh;
+    line-height: 18vh;
+    writing-mode: sideways-lr;
+}
+.vjPostHeadingPara{
+    font-size: 2rem;
+}
+
+.vjPostContent{
+    display: block;
+    background: #282e35;
+    z-index: 4;
+}
+.vjSectionHead{display: flex; align-items: center; justify-content: flex-start;
+    font-size: 1.3rem;
+    padding-left: 2vw;height: 40px;
+    background: #282e35;
+    position: sticky; color: #fff;
+    top:0;z-index: 20;
+    backdrop-filter: blur(2px);
+    box-shadow: inset #ff0 0 -2px;
+}
+.vjSectionHead span:nth-of-type(2){
+    margin-left: auto; padding-right: 2vw;
+}
+.vjSectionContent{
+    padding-top: 50px;
+}
