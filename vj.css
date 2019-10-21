@@ -57,6 +57,12 @@ body{
     text-align: center;
     height: 40px;
     line-height: 40px;
+    color: #ddd;
+}
+.gallery-thumbs .swiper-slide:hover{
+    color: #35d6ec;
+    background: #181e25;
+    cursor: grab;
 }
 .gallery-thumbs .swiper-slide-thumb-active{
     background: #35d6ec;
@@ -107,11 +113,17 @@ body{
     position: sticky; color: #fff;
     top:0;z-index: 20;
     backdrop-filter: blur(2px);
-    box-shadow: inset #ff0 0 -2px;
+    box-shadow: inset #35d6ec 0 -2px, #35d6ec 0px -2px 0px 0px;
+    text-decoration: none;
 }
-.vjSectionHead span:nth-of-type(2){
+.vjSectionHead:hover, .vjSectionHead:focus{
+    text-decoration: none;
+    color: #35d6ec;
+    background: #181e25;
+}
+.vjSectionHead i:nth-of-type(2){
     margin-left: auto; padding-right: 2vw;
 }
-.vjSectionContent{
-    padding-top: 50px;
+.mm-wrapper__blocker.mm-slideout {
+    z-index: 120;
 }
